@@ -1,10 +1,15 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
 .navbar {
-    background-color: #343a40;
+    background-color: #333;
+}
+
+.navbar-brand {
+    font-weight: bold;
 }
 
 .nav-link {
@@ -15,21 +20,81 @@ body {
     color: #ffc107 !important;
 }
 
-footer {
-    background-color: #343a40;
-    color: #fff;
-}
-
 header {
     background-color: #007bff;
     color: #fff;
 }
 
-section {
-    margin-top: 50px;
+h1, h2 {
+    font-weight: 600;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+footer {
+    background-color: #343a40;
+    color: #fff;
 }
+
+section {
+    margin-top: 0px;
+}
+
+/* Estilos personalizados para botones */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Ajustes visuales adicionales */
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+p {
+    color: #6c757d;
+}
+
+/* Sección del video de fondo */
+.video-bg {
+    position: relative;
+    height: 100vh; /* Hace que el video ocupe todo el alto de la pantalla */
+    overflow: hidden;
+  }
+  
+  #background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que el video cubra toda la pantalla */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Filtro oscuro para que el texto se vea bien */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
