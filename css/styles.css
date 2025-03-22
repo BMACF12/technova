@@ -561,7 +561,7 @@ section.bg-light .line {
 /* Estilo para el texto de la derecha (p y h3) */
 section.bg-light h3 {
   font-size: 2rem; /* Ajustado para un tamaño coherente */
-  font-weight: 500; /* Un peso de fuente similar al de otras secciones */
+  font-weight: 600; /* Un peso de fuente similar al de otras secciones */
   color: #333; /* Color oscuro para mejor legibilidad */
   margin-bottom: 20px;
   font-family: 'Poppins', sans-serif;
@@ -569,8 +569,9 @@ section.bg-light h3 {
 
 /* Estilo para el párrafo */
 section.bg-light p {
-  font-size: 1.2rem; /* Tamaño de fuente coherente */
-  font-weight: 400;
+  font-size: 1.5rem; /* Tamaño de fuente coherente */
+  margin-top: 30px;
+  font-weight: 300;
   color: #6c757d; /* Gris claro */
   margin-bottom: 30px; /* Espacio entre el párrafo y el botón */
 }
@@ -583,7 +584,7 @@ section.bg-light .btn-primary {
   font-size: 1.2rem; /* Tamaño más grande para el botón */
   font-weight: 600; /* Peso similar al usado en otras secciones */
   padding: 1rem 2rem; /* Aseguramos que el botón sea grande y destacado */
-  border-radius: 25px; /* Bordes redondeados */
+  border-radius: 5px; /* Bordes redondeados */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
   margin-top: 20px; /* Un margen en la parte superior para que no quede pegado al texto */
   text-align: center;
