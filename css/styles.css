@@ -227,7 +227,6 @@ section.py-5.bg-white {
 /* Ajustar el tamaño de las tarjetas para que tengan el mismo tamaño */
 .card {
   height: 100%; /* Hace que todas las tarjetas tengan el mismo tamaño */
-  margin-top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Asegura que el contenido esté distribuido de forma uniforme */
@@ -299,19 +298,49 @@ h2 {
   background-color: #ff5722; /* Naranja */
 }
 
-/* Línea entre el título y las tarjetas */
-h2 {
+/* Estilo para la línea debajo del título */
+.line {
   position: relative;
-  margin-bottom: 30px; /* Aumenta el espacio entre el título y la línea */
+  margin: 30px auto;
+  width: 100%;
+  height: 1px;
+  background-color: #000; /* Color de la línea */
+  border-radius: 20px; /* Le da bordes redondeados */
+  max-width: 100%; /* Ajusta el ancho de la línea */
+  margin-top: 50px;
 }
 
-h2::after {
-  content: "";
+/* Ajustes al video */
+.embed-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.embed-responsive-item {
   position: absolute;
-  bottom: -30px; /* Ajusta la distancia de la línea del título */
+  top: 0;
   left: 0;
   width: 100%;
-  height: 2px; /* Puedes ajustar la altura para que sea más delgada o gruesa */
-  background-color: #000; /* Color negro */
-  border-radius: 20px; /* Le da bordes redondeados a la línea, si deseas */
+  height: 100%;
+}
+
+/* Ajustes al texto */
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.py-5 {
+  background-color: #C69F89;
 }
