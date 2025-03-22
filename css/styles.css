@@ -345,7 +345,7 @@ p {
   background-color: #C69F89;
 }
 
-/* Sección con diseño moderno */
+/* Nueva Sección con Diseño Moderno */
 .modern-section {
   background-color: #f8f9fa;
   padding: 5rem 0;
@@ -386,6 +386,7 @@ p {
 }
 
 .modern-section .image-container {
+  position: relative; /* Hacer que la imagen y el cuadro se posicionen juntos */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,13 +394,20 @@ p {
 
 .modern-section img {
   max-width: 100%;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  z-index: 2; /* Asegura que la imagen esté encima del fondo */
 }
 
-@media (max-width: 767px) {
-  .modern-section .container {
-    flex-direction: column;
-  }
+.modern-section .background-box {
+  position: absolute;
+  top: -20px; /* Desplazamiento hacia arriba */
+  left: 20px; /* Desplazamiento hacia la derecha */
+  width: 100%;
+  height: 100%;
+  background-color: #C69F89; /* Color del cuadro */
+  z-index: 1; /* Asegura que el cuadro esté detrás de la imagen */
+  transform: rotate(-15deg); /* Ajusta la inclinación */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1); /* Sombra para un toque moderno */
+  border-radius: 20px; /* Bordes redondeados */
 }
-
