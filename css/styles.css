@@ -344,3 +344,62 @@ p {
 .py-5 {
   background-color: #C69F89;
 }
+
+/* Sección con diseño moderno */
+.modern-section {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.modern-section .container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modern-section .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.modern-section .section-description {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+.modern-section .btn-primary {
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.modern-section .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.modern-section .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modern-section img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  .modern-section .container {
+    flex-direction: column;
+  }
+}
+
