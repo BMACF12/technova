@@ -51,10 +51,6 @@ h3 {
   font-weight: 500;
 }
 
-p {
-  color: #6c757d;
-}
-
 /* Sección del video de fondo */
 .video-bg {
   position: relative;
@@ -175,6 +171,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.eti{
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Aumentar la sección */
@@ -444,6 +447,7 @@ p {
   padding: 5rem 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .modern-section .container {
@@ -476,13 +480,19 @@ p {
   transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
   margin-top: 20px; /* Un margen en la parte superior para que no quede pegado al texto */
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 250px;
 }
 
 .modern-section .btn-primary:hover {
   background-color: #0056b3; /* Fondo más oscuro al pasar el ratón */
   border-color: #0056b3;
   transform: translateY(-5px); /* Eleva el botón ligeramente cuando se pasa el ratón */
+}
+
+/* Ajuste de la posición de la imagen */
+.modern-section .image-container img {
+  transform: translateY(-20%); /* Ajusta el valor negativo para subir la imagen */
+  /* Puedes modificar -20% a tu gusto para moverla más arriba o más abajo */
 }
 
 .modern-section .image-container {
@@ -500,7 +510,7 @@ p {
 
 .modern-section .background-box {
   position: absolute;
-  top: -20px;
+  top: -90px;
   /* Desplazamiento hacia arriba */
   left: 20px;
   /* Desplazamiento hacia la derecha */
@@ -584,7 +594,7 @@ section.bg-light .btn-primary {
   transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
   margin-top: 20px; /* Un margen en la parte superior para que no quede pegado al texto */
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 section.bg-light .btn-primary:hover {
@@ -593,16 +603,36 @@ section.bg-light .btn-primary:hover {
   transform: translateY(-5px); /* Eleva el botón ligeramente cuando se pasa el ratón */
 }
 
-/* Estilo para el iframe (video) */
-section.bg-light iframe {
-  width: 100%; /* El video ocupará todo el ancho disponible */
-  height: 350px; /* Altura del video ajustada */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave para darle un toque moderno */
-}
-
 /* Ajustes generales */
 section.bg-light .row.align-items-center {
   display: flex;
   justify-content: center; /* Centrar la fila de elementos */
+}
+
+/* Contenedor de la sección con el video de fondo */
+section.bg-light {
+  position: relative; /* Permite posicionar el contenedor en relación a sí mismo */
+  padding: 5rem 0;
+  background-color: #000; /* Fondo negro para el recuadro */
+  overflow: hidden;
+  margin-top: 0px; /* Mueve la sección y el fondo negro hacia arriba */
+}
+
+/* Contenedor para el iframe (el video) */
+section.bg-light .embed-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #fff; /* Asegura que el fondo negro esté detrás del video */
+  margin-top: -180px; /* Desplaza el video y el fondo hacia arriba */
+}
+
+/* Ajusta el iframe del video */
+section.bg-light iframe {
+  width: 100%; /* El video ocupará todo el ancho disponible */
+  height: 100%; /* Hace que el video ocupe todo el espacio del contenedor */
+  border: none; /* Quita el borde */
+  border-radius: 20px; /* Bordes rectos */
 }
