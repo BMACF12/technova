@@ -808,6 +808,13 @@ section.bg-white .btn-primary:hover {
   color: #1a6ec1;
 }
 
+.timeline-item img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible del contenedor */
+  height: 200px; /* Ajusta la altura de todas las imágenes a un tamaño fijo */
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción, cubriendo el área sin deformarse */
+  border-radius: 8px; /* Añade bordes redondeados si deseas */
+}
+
 @media screen and (max-width: 768px) {
   .timeline-item, .timeline-item.left, .timeline-item.right {
     width: 90%;
