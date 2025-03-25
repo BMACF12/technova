@@ -973,3 +973,97 @@ section.bg-white .btn-primary:hover {
     width: 100%;
   }
 }
+
+
+/* Blog Section */
+.blog-section {
+  background-color: #f8f9fa;
+  padding: 80px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-blog {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  color: #333;
+  font-weight: 600;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.blog-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover img {
+  transform: scale(1.1);
+}
+
+.blog-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  color: white;
+  opacity: 0;
+  padding: 30px;
+  transition: opacity 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.blog-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.overlay p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1rem;
+  align-self: flex-start;
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  color: #ffc107;
+}
+
+

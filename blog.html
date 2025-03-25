@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -29,30 +31,191 @@
     </div>
   </nav>
 
-  <!-- Sección Blog -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Últimos artículos</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <h5>5 tecnologías que están cambiando el mundo</h5>
-          <p>Desde la inteligencia artificial hasta el blockchain, descubre cómo estas tecnologías están revolucionando industrias.</p>
-        </div>
-        <div class="col-md-6">
-          <h5>¿Qué es el desarrollo web moderno?</h5>
-          <p>Exploramos herramientas, frameworks y buenas prácticas para crear sitios web rápidos, accesibles y seguros.</p>
+  <div class="oscontainer-outer">
+    <!-- Sección con video de fondo -->
+    <section class="nosotros video-bg">
+      <video autoplay muted loop id="background-video">
+        <source src="img/video_index.mp4" type="video/mp4">
+        Tu navegador no soporta el formato de video.
+      </video>
+      <div class="overlay">
+        <div class="container text-center text-white">
+          <h1 class="display-4">Blog</h1>
+          <p class="eti">En TechNova somos un equipo apasionado por la tecnología...</p>
+          <a href="contacto.html" class="btn btn-light mt-3">Solicita una demo</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-      <p class="mb-0">&copy; 2025 TechNova. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+    <!-- Sección Blog -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Últimos artículos</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>5 tecnologías que están cambiando el mundo</h5>
+            <p>Desde la inteligencia artificial hasta el blockchain, descubre cómo estas tecnologías están
+              revolucionando industrias.</p>
+          </div>
+          <div class="col-md-6">
+            <h5>¿Qué es el desarrollo web moderno?</h5>
+            <p>Exploramos herramientas, frameworks y buenas prácticas para crear sitios web rápidos, accesibles y
+              seguros.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <section class="blog-section">
+      <div class="container-blog">
+        <h2 class="blog-title">Historias y Noticias TechNova</h2>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <img src="img/reloj2.jpg" alt="Blog 1">
+            <div class="blog-content">
+              <h3>Innovación para adultos mayores</h3>
+              <p>TechNova implementa tecnología avanzada para transformar el bienestar.</p>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img src="img/reloj2.jpg" alt="Blog 1">
+            <div class="blog-content">
+              <h3>Innovación para adultos mayores</h3>
+              <p>TechNova implementa tecnología avanzada para transformar el bienestar.</p>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img src="img/reloj2.jpg" alt="Blog 1">
+            <div class="blog-content">
+              <h3>Innovación para adultos mayores</h3>
+              <p>TechNova implementa tecnología avanzada para transformar el bienestar.</p>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img src="img/reloj2.jpg" alt="Blog 1">
+            <div class="blog-content">
+              <h3>Innovación para adultos mayores</h3>
+              <p>TechNova implementa tecnología avanzada para transformar el bienestar.</p>
+            </div>
+          </div>
+          <!-- Repite otras 15 tarjetas aquí -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sección Testimonios con Video -->
+    <section class="seccion-testimonios">
+      <div class="container-testimonios">
+        <!-- Video a la izquierda -->
+        <div class="video-testimonio">
+          <iframe src="https://www.youtube.com/embed/0w4xQcRq9FU" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Carrusel de testimonios a la derecha -->
+        <div class="testimonios-carousel">
+          <div class="testimonial active">
+            <div class="estrellas">★★★★★</div>
+            <p>"TechNova ha revolucionado nuestra manera de operar. ¡Muy recomendados!"</p>
+            <h4>- Juan Pérez</h4>
+          </div>
+          <div class="testimonial">
+            <div class="estrellas">★★★★★</div>
+            <p>"Excelente servicio, atención rápida y personalizada."</p>
+            <h4>- Laura Gómez</h4>
+          </div>
+          <div class="testimonial">
+            <div class="estrellas">★★★★★</div>
+            <p>"Desde que trabajamos con TechNova, todo ha sido más eficiente."</p>
+            <h4>- Carlos Rodríguez</h4>
+          </div>
+          <div class="carousel-controls">
+            <button id="prev">&#8592;</button>
+            <button id="next">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nueva Sección con Diseño Moderno -->
+    <section class="modern-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="section-title">Vive la experiencia TechNova</h2>
+            <p class="section-description">
+              ¡Te invitamos a formar parte de nuestra comunidad y vivir una experiencia única! En TechNova nos
+              especializamos en ofrecer soluciones tecnológicas que mejoren la calidad de vida de nuestros socios, con
+              un
+              enfoque cercano y humano.
+            </p>
+            <a href="https://wa.me/+1234567890" class="btn btn-primary">Únete ahora</a>
+          </div>
+          <div class="col-md-6">
+            <div class="image-container">
+              <!-- Cuadro de fondo -->
+              <div class="background-box"></div> <!-- Este es el cuadro de fondo -->
+              <img src="img/reloj2.jpg" alt="TechNova Experience" class="img-fluid rounded shadow-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sección Blog - Tarjetas 4x4 -->
+    <section class="blog-section">
+      <div class="container-blog">
+        <h2 class="blog-title">Últimas Noticias TechNova</h2>
+        <div class="blog-grid">
+          <!-- Repite esta tarjeta hasta tener 16 -->
+          <div class="blog-card">
+            <img src="img/reloj2.jpg" alt="Blog 1">
+            <div class="overlay">
+              <h3>Innovación en Salud</h3>
+              <p>Descubre cómo usamos IA para mejorar la calidad de vida de adultos mayores.</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img src="img/reloj2.jpg" alt="Blog 1">
+            <div class="overlay">
+              <h3>Innovación en Salud</h3>
+              <p>Descubre cómo usamos IA para mejorar la calidad de vida de adultos mayores.</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img src="img/blog1.jpg" alt="Blog 1">
+            <div class="overlay">
+              <h3>Innovación en Salud</h3>
+              <p>Descubre cómo usamos IA para mejorar la calidad de vida de adultos mayores.</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img src="img/blog1.jpg" alt="Blog 1">
+            <div class="overlay">
+              <h3>Innovación en Salud</h3>
+              <p>Descubre cómo usamos IA para mejorar la calidad de vida de adultos mayores.</p>
+              <a href="#" class="read-more">Leer más</a>
+            </div>
+          </div>
+          <!-- Agrega más tarjetas aquí (copia y cambia el contenido o imagen) -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p class="mb-0">&copy; 2025 TechNova. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script src="/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
