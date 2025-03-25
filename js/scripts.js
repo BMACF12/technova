@@ -49,3 +49,29 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', animateTimeline);
     window.addEventListener('resize', animateTimeline);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const testimonios = document.querySelectorAll('.testimonial');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    let current = 0;
+  
+    function mostrarTestimonio(index) {
+      testimonios.forEach((item, i) => {
+        item.classList.toggle('active', i === index);
+      });
+    }
+  
+    nextBtn.addEventListener('click', () => {
+      current = (current + 1) % testimonios.length;
+      mostrarTestimonio(current);
+    });
+  
+    prevBtn.addEventListener('click', () => {
+      current = (current - 1 + testimonios.length) % testimonios.length;
+      mostrarTestimonio(current);
+    });
+  
+    mostrarTestimonio(current); // Inicial
+  });
+  
