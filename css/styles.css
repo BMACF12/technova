@@ -826,3 +826,58 @@ section.bg-white .btn-primary:hover {
   }
 }
 
+/* Sección personalizada de servicios */
+.servicios-section {
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo moderno para los ítems del acordeón */
+.servicio-item {
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-item .accordion-button {
+  background-color: #ffffff;
+  color: #007bff;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.servicio-item .accordion-button:not(.collapsed) {
+  background-color: #007bff;
+  color: white;
+}
+
+.servicio-item .accordion-body {
+  background-color: #ffffff;
+  color: #333;
+  font-size: 1rem;
+  padding: 1.2rem;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Estilo del video */
+.video-container {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
