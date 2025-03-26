@@ -1065,3 +1065,67 @@ section.bg-white .btn-primary:hover {
 .read-more:hover {
   color: #ffc107;
 }
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-info {
+  flex: 1;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-social {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 30px; /* Ajusta el tamaño */
+  color: white;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #ffb400; /* Color cuando se pasa el ratón */
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #ffb400;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
