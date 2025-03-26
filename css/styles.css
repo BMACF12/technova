@@ -1129,3 +1129,9 @@ section.bg-white .btn-primary:hover {
 .footer-bottom a:hover {
   text-decoration: underline;
 }
+
+/* Estilo para el botón y el icono */
+.btn i {
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  font-size: 22px; /* Ajusta el tamaño del icono */
+}
